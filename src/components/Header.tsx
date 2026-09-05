@@ -54,8 +54,6 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-8">
           <a
             href={homeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="nav-link text-sm font-medium flex items-center gap-1.5"
           >
             <Home className="w-4 h-4" />
@@ -89,8 +87,6 @@ export function Header() {
         <nav className="md:hidden bg-parchment-light border-t border-gold/20 mt-3 py-4 px-6 flex flex-col gap-4">
           <a
             href={homeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="nav-link text-sm font-medium flex items-center gap-1.5"
             onClick={() => setMenuOpen(false)}
           >
