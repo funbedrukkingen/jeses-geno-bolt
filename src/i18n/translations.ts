@@ -8,6 +8,7 @@ export interface UITranslations {
   navGenealogy: string;
   navCursedKings: string;
   navMissingKings: string;
+  navHome: string;
 
   // Hero
   heroTitleLine1: string;
@@ -95,6 +96,7 @@ const nl: UITranslations = {
   navGenealogy: 'De Stamboom',
   navCursedKings: 'Vervloekte Koningen',
   navMissingKings: 'Ontbrekende Koningen',
+  navHome: 'Home',
 
   heroTitleLine1: 'De Stamboom van',
   heroTitleLine2: 'Jezus Christus',
@@ -192,6 +194,7 @@ const en: UITranslations = {
   navGenealogy: 'The Genealogy',
   navCursedKings: 'Cursed Kings',
   navMissingKings: 'Missing Kings',
+  navHome: 'Home',
 
   heroTitleLine1: 'The Genealogy of',
   heroTitleLine2: 'Jesus Christ',

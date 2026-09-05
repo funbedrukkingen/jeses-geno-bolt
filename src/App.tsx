@@ -5,7 +5,7 @@ import { Introduction } from '@/components/Introduction';
 import { GenealogyTree } from '@/components/GenealogyTree';
 import { CursedKings } from '@/components/CursedKings';
 import { Footer } from '@/components/Footer';
-import { EmbedButton } from '@/components/EmbedButton';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 function useEmbedMode() {
   const [isEmbed, setIsEmbed] = useState(false);
@@ -31,7 +31,7 @@ function App() {
         <CursedKings />
       </main>
       {!isEmbed && <Footer />}
-      {!isEmbed && <EmbedButton />}
+      {!isEmbed && <ScrollToTop />}
     </div>
   );
 }

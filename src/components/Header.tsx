@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 import { LanguageSwitch } from './LanguageSwitch';
@@ -22,6 +22,7 @@ export function Header() {
     { label: t.navCursedKings, href: '#cursed-kings' },
     { label: t.navMissingKings, href: '#missing-kings' },
   ];
+  const homeUrl = 'https://christeneninnederland.nl/';
 
   return (
     <header
@@ -51,6 +52,15 @@ export function Header() {
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
+          <a
+            href={homeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link text-sm font-medium flex items-center gap-1.5"
+          >
+            <Home className="w-4 h-4" />
+            {t.navHome}
+          </a>
           {links.map((link) => (
             <a
               key={link.href}
@@ -77,6 +87,16 @@ export function Header() {
 
       {menuOpen && (
         <nav className="md:hidden bg-parchment-light border-t border-gold/20 mt-3 py-4 px-6 flex flex-col gap-4">
+          <a
+            href={homeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link text-sm font-medium flex items-center gap-1.5"
+            onClick={() => setMenuOpen(false)}
+          >
+            <Home className="w-4 h-4" />
+            {t.navHome}
+          </a>
           {links.map((link) => (
             <a
               key={link.href}
